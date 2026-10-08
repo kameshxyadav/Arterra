@@ -1,0 +1,43 @@
+vessels:
+  LAD:
+    mesh_node: "LAD_artery"
+    label: "Left Anterior Descending"
+  LCX:
+    mesh_node: "LCX_artery"
+    label: "Left Circumflex"
+  RCA:
+    mesh_node: "RCA_artery"
+    label: "Right Coronary Artery"
+
+risk_bands:
+  low:
+    max: 0.35
+    label: "Low Risk"
+  moderate:
+    min: 0.35
+    max: 0.65
+    label: "Moderate Risk"
+  high:
+    min: 0.65
+    label: "High Risk"
+
+palettes:
+  default:
+    low: "#22c55e"       # Green
+    moderate: "#f59e0b"  # Amber/Yellow
+    high: "#ef4444"      # Red
+  colorblind_safe:
+    low: "#0072B2"       # Blue
+    moderate: "#E69F00"  # Orange
+    high: "#D55E00"      # Vermilion
+
+camera_presets:
+  anterior:
+    position: [0, 0, 5]
+    target: [0, 0, 0]
+  lateral:
+    position: [-5, 0, 0]
+    target: [0, 0, 0]
+  inferior:
+    position: [0, -5, 1]
+    target: [0, 0, 0]
