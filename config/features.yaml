@@ -1,0 +1,25 @@
+# Feature configuration placeholder
+
+groups:
+  demographic:
+    - name: age
+      label: Age
+      type: numeric
+      unit: years
+      min: 0
+      max: 120
+    - name: gender
+      label: Gender
+      type: categorical
+      options: [Male, Female, Other]
+  vitals:
+    - name: systolic_bp
+      label: Systolic Blood Pressure
+      type: numeric
+      unit: mmHg
+    - name: diastolic_bp
+      label: Diastolic Blood Pressure
+      type: numeric
+      unit: mmHg
+
+# TODO: Populate with actual dataset features after data loading

@@ -1,0 +1,31 @@
+# Model registry placeholder for Phase 4.
+
+# The actual project will contain separate entries for each target (CAD, LAD, LCX, RCA)
+# with a small hyper‑parameter grid. For now we provide a minimal example that the
+# training script can read.
+
+models:
+  CAD:
+    algorithm: "LogisticRegression"
+    params:
+      C: [0.1, 1.0, 10.0]
+      solver: ["lbfgs"]
+      max_iter: [200]
+  LAD:
+    algorithm: "LogisticRegression"
+    params:
+      C: [0.1, 1.0, 10.0]
+      solver: ["lbfgs"]
+      max_iter: [200]
+  LCX:
+    algorithm: "LogisticRegression"
+    params:
+      C: [0.1, 1.0, 10.0]
+      solver: ["lbfgs"]
+      max_iter: [200]
+  RCA:
+    algorithm: "LogisticRegression"
+    params:
+      C: [0.1, 1.0, 10.0]
+      solver: ["lbfgs"]
+      max_iter: [200]

@@ -1,0 +1,6 @@
+[
+  {
+    "file": "raw\\patient_data.csv",
+    "leakage_columns": []
+  }
+]
